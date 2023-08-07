@@ -1,0 +1,26 @@
+p{
+  font-size: 25px;
+}
+
+body{
+  margin: 6%;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+  box-sizing: border-box;
+  background-color: #414141;
+  color: #ffffff;
+}
+
+.btn{
+  display: flex;
+  justify-content: center;
+}
+
+button{
+  width: 100px;
+  font-size: 1.5em;
+  padding: 1%;
+  margin-right: 5%;
+  border-radius: 10px;
+  cursor: pointer;
+}

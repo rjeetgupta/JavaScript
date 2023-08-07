@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <style>
+        * {
+            background-color: #414141;
+            color: #ccc;
+        }
+
+        .main {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- <div class="main">
+        <div class="btn">
+            <button type="button" id="time">The time is ?</button>
+        </div>
+    </div> -->
+</body>
+<script>
+    // document.getElementById('time').addEventListener('click', function(){
+    //     // console.log(Date());
+    //     // this.innerHTML = Date()
+    //     // document.write(Date())
+    // })
+
+    // document.getElementById('time').innerHTML = Date();
+
+    // document.getElementById('time').addEventListener('onkeydown', function(){
+    //     alert("This is mouse hover effect")
+    // })
+
+    // let str = `Father's`;
+    // console.log(str);
+
+
+
+    window.onload = () => {
+        const heading = document.createElement("h1");
+        const headingText = document.createTextNode("Big Text");
+        heading.appendChild(headingText);
+        document.body.appendChild(heading);
+    };
+
+    window.onload = () => {
+        const para = document.createElement("p");
+        const paraText = document.createTextNode("This is Paragraph text that is to be included in the body");
+        para.appendChild(paraText);
+        document.body.appendChild(para);
+    };
+
+
+
+</script>
+
+</html>
