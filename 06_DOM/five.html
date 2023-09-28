@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;background-color: #414141;color: #ddd;
+        }
+
+        .container{
+            width: 80vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .addTwo{
+            align-items: center;
+            background-color: gold;
+            padding: 4%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="addtwo">
+            <form action="">
+                First-Number : <input type="number" id="num1"><br>
+                Secon-Number : <input type="number" id="num2"><br>
+                Total : <input onclick="addTwo">
+                <button type="button" onclick="addTwo()">Submit</button>
+            </form>
+        </div>
+
+    </div>
+
+
+    <script>
+        let num1 = document.getElementById("num1");
+        let num2 = document.getElementById("num2");
+        function addTwo(num1, num2) {
+            let sum = num1 + num2;
+            return sum;
+        }
+    </script>
+</body>
+</html>

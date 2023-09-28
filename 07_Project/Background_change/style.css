@@ -1,0 +1,55 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: grey;
+    height: 40px;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid ;
+    border-radius: 5px;
+    background-color: grey;
+    padding: .8%;
+}
+
+span{
+    display: block;
+}
+
+.canva{
+    margin: 100px auto 100px;
+    width: 80%;
+    text-align: center;
+}
+
+.button{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    display:inline-block;
+}
+
+
+#grey {
+    background: grey;
+}
+
+#white {
+    background: white;
+}
+#blue {
+    background: blue;
+}
+#yellow {
+    background: yellow;
+}
