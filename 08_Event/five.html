@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More about event</title>
+</head>
+
+<body>
+    <p>Press any key or click the mouse to get the event type.</p>
+    <p id="log"></p>
+
+    <!-- 
+        timestamp => reads only property & return the time in milisecond 
+    -->
+    <p>
+        Focus this iframe and press any key to get the current timestamp for the
+        keypress event.
+    </p>
+    <p>timeStamp: <span id="time">-</span></p>
+
+    <!-- target event -->
+    <!-- The read-only target property of the Event interface is a reference to the object onto which the event was dispatched. It is different from Event.currentTarget when the event handler is called during the bubbling or capturing phase of the event. -->
+
+
+    <script>
+        // type event example
+        function getEventType(event) {
+            const log = document.getElementById("log");
+            log.innerText = `${event.type}\n${log.innerText}`;
+        }
+
+        // Keyboard events
+        document.addEventListener("keydown", getEventType, false); // first
+        document.addEventListener("keypress", getEventType, false); // second
+        document.addEventListener("keyup", getEventType, false); // third
+
+        // Mouse events
+        document.addEventListener("mousedown", getEventType, false); // first
+        document.addEventListener("mouseup", getEventType, false); // second
+        document.addEventListener("click", getEventType, false); // third
+
+
+        // timeStamp example
+        function getTime(event) {
+            const time = document.getElementById("time");
+            time.firstChild.nodeValue = event.timeStamp;
+        }
+        document.body.addEventListener("keypress", getTime);
+
+
+        // target event
+
+        // Make a list
+        const ul = document.createElement("ul");
+        document.body.appendChild(ul);
+
+        const li1 = document.createElement("li");
+        const li2 = document.createElement("li");
+        ul.appendChild(li1);
+        ul.appendChild(li2);
+
+        function hide(evt) {
+            // evt.target refers to the clicked <li> element
+            // This is different than evt.currentTarget, which would refer to the parent <ul> in this context
+            evt.target.style.visibility = "hidden";
+        }
+
+        // Attach the listener to the list
+        // It will fire when each <li> is clicked
+        ul.addEventListener("click", hide, false);
+
+    </script>
+</body>
+
+</html>

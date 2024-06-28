@@ -3,7 +3,7 @@
 let myDate = new Date()
 // console.log(myDate.toString()); // Fri Jun 16 2023 13:54:01 GMT+0530 (India Standard Time)
 // console.log(myDate.toDateString());  // Fri Jun 16 2023
-// console.log(myDate.toLocaleDateString());  //16/6/202
+// console.log(myDate.toLocaleDateString());  //16/6/2023
 // console.log(myDate.toISOString); // [Function: toISOString]
 // console.log(myDate.toJSON); // [Function: toJSON]
 // console.log(myDate.getFullYear); // [Function: getFullYear]

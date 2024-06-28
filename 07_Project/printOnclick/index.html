@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: #212121;
+            color: antiquewhite;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            padding: 1rem;
+            width: 70px;
+            border-radius: 10px;
+            margin: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+    </div>
+</body>
+<script>
+    const start = document.getElementById('start');
+    const stop = document.getElementById('stop');
+    
+    let intervalId;
+    const startPrinting = function(){
+        if (!intervalId) {
+            intervalId = setInterval(printing, 2000);
+        }
+    }
+
+    const printing = function(){
+        console.log("Chai aur code");
+        const date = new Date();
+        console.log(date.toLocaleTimeString());
+    }
+
+    const stopPrinting = function(){
+        clearInterval(intervalId);
+        intervalId = null;
+    }
+    start.addEventListener('click', startPrinting);
+    stop.addEventListener('click', stopPrinting);
+</script>
+</html>

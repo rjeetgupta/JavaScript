@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    margin: 0 2rem;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+}
+.cart{
+    width: 30%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
+}
+.cart_image{
+    width: 225px;
+    height: 225px;
+}

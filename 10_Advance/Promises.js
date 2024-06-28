@@ -1,4 +1,7 @@
-const promiseOne = new Promise(function(resolve, reject){
+// Promise => The promise object represets the eventual complition or failure
+
+// Assigning in variable is optonal
+const promiseOne = new Promise(function (resolve, reject) {
     //Do an async task
     // DB calls, cryptography, network
     setTimeout(function(){
@@ -13,6 +16,8 @@ promiseOne.then(function(){
     console.log("Promise consumed");
 })
 
+
+// Another way
 new Promise(function(resolve, reject){
     setTimeout(function(){
         console.log("Async task 2");
@@ -25,7 +30,8 @@ new Promise(function(resolve, reject){
 
 const promiseThree = new Promise(function(resolve, reject){
     setTimeout(function(){
-        resolve({username: "Chai", email: "chai@example.com"})
+        resolve({ username: "Chai", email: "chai@example.com" })
+        // here anything can be pass like object or array
     }, 1000)
 })
 
@@ -44,8 +50,8 @@ const promiseFour = new Promise(function(resolve, reject){
     }, 1000)
 })
 
- promiseFour
- .then((user) => {
+promiseFour
+.then((user) => {
     console.log(user);
     return user.username
 }).then((username) => {

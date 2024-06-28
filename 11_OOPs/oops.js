@@ -39,10 +39,11 @@ console.log(userOne.constructor);
 
 /* 
     About new Keyword =>
-    1. empty object is created
+    1. empty object is created i.e is called instance
     2. Constructor function is called due to new keyword it packs 
         all the argument and return
     3. Inject all argument and return 
+    4. get all the details in the form of function
 */
 
 // read InstanceOf

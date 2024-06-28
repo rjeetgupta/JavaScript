@@ -17,7 +17,7 @@
 const accountId = 144553
 let accountEmail = "ranjeet@gmail.com"
 var accountPassword = "1234"
-accountCity = "Ranchi"  // In Javascript we can declear without defining it's datatype.But it is not  recommended.
+accountCity = "Ranchi"  // In Javascript we can declear without defining it's variable.But it is not  recommended.
 let accountState;    // Undefined because we didn't declear any value for it.
 
 // accountId = 2 // not allowed, It can not be changed once it defined

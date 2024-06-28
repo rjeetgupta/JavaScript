@@ -26,7 +26,7 @@ const hundred = 1000000
 
 // console.log(Math.pow(25));
 // sqrt() => used for square root of the number
-// pow
+// pow(num, toPowerOf) => takes 2 value first a number and second is power value
 
 
 // console.log(Math.min(4, 9, 6, 2, 5));

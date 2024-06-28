@@ -32,7 +32,7 @@
 </body>
 <script>
     // document.getElementById('owl').onclick = function(){
-    //     alert("owl clicked")
+    //     alert("owl clicked")  // this gets less features. Not a modern code
     // }
 
     // attachEvent() => It is used for internet explorer 
@@ -49,12 +49,16 @@
     // document.getElementById('images').addEventListener('click', function(e){
     //     console.log("clicked inside the ul");
     // }, false)  // this false is bubbling case and false is also called EventPropegation
+        // bubling means execute the code from buttom to top
+        // false is default value
+
+
 
     // if true is written then i.e capturing case
 
     // document.getElementById('owl').addEventListener('click', function(e){
     //     console.log("owl clicked");
-    //     e.stopPropagation()
+    //     e.stopPropagation() // this is used when we don't want to bubbling the event
     // }, false)
 
     // document.getElementById('google').addEventListener('click',function(e){
@@ -62,6 +66,16 @@
     //     e.stopPropagation()
     //     console.log("google clicked");
     // }, false)
+
+
+    // document.querySelector('#images').addEventListener('click', function (e) {
+    //     console.log(e.target.parentNode);
+    //         console.log(e.target.parentNode);
+    //         let removeIt = e.target.parentNode
+    //         removeIt.remove()
+    //         //removeIt.parentNode.removeChild(removeIt)
+    // })
+
 
 
     document.querySelector('#images').addEventListener('click', function (e) {
@@ -75,7 +89,6 @@
 
     })
 
-    //removeIt.parentNode.removeChild(removeIt)
 </script>
 
 </html>
