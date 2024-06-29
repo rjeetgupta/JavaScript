@@ -12,8 +12,8 @@
       Each operation waits for the last one
        to complete before executing
 
-    console.log - 1
-    console.log - 2
+    console.log -> 1
+    console.log -> 2
 
     (call stack)     (Memory Heap)
 
