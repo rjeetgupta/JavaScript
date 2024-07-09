@@ -11,6 +11,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #232328;
 }
 
 .container{
@@ -58,3 +59,11 @@ button{
     margin-left: 23%;
     text-align: center;
 }
+
+#height, #weight{
+    padding: 0.4rem;
+}
+
+/* #height:hover, #weight:hover{
+    border: none;
+} */

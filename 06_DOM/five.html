@@ -16,6 +16,7 @@
             justify-content: center;
             align-items: center;
         }
+        
         .addTwo{
             align-items: center;
             background-color: gold;
@@ -29,10 +30,11 @@
 
         <div class="addtwo">
             <form action="">
-                First-Number : <input type="number" id="num1"><br>
-                Secon-Number : <input type="number" id="num2"><br>
-                Total : <input onclick="addTwo">
-                <button type="button" onclick="addTwo()">Submit</button>
+                <label for="num1">Enter first number : </label>
+                <input type="text" id="num1"> <br>
+
+                <label for="num2">Enter second number : </label>
+                <input type="text" id="num2"> <br>
             </form>
         </div>
 
@@ -46,6 +48,11 @@
             let sum = num1 + num2;
             return sum;
         }
+
+        document.getElementById('result').innerText = res
+
+        const res = document.querySelector('type[button]')
+        .addEventListener('click', addTwo)
     </script>
 </body>
 </html>

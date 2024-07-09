@@ -1,5 +1,5 @@
 // Promise => The promise object represets the eventual complition or failure
-
+// A Promise is an object representing the eventual completion or failure of an asynchronous operation. 
 // Assigning in variable is optonal
 const promiseOne = new Promise(function (resolve, reject) {
     //Do an async task
